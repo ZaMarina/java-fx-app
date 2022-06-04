@@ -20,9 +20,10 @@
     <TextArea fx:id="historyArea" editable="false" VBox.vgrow="ALWAYS"/>
 
     <HBox spacing="10">
-        <Button text="+ Фото" defaultButton="true" onAction="#clickCheckButton"/>
-        <Button text="+  файл" defaultButton="true" onAction="#clickCheckButton"/>
-        <Button text="+ Контакт" defaultButton="true" onAction="#clickCheckButton"/>
+
+        <Button text="Прикрепить файл" defaultButton="true" onAction="#clickCheckButton"/>
+        <Button text="Добавить Контакт" defaultButton="true" onAction="#clickCheckButton"/>
+        <Button text="☺" defaultButton="true" onAction="#clickCheckButton"/>
     </HBox>
 
     <HBox spacing="10">
