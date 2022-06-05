@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" spacing="10.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.db.javafxapp.Controller">
+    <padding>
+        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+    </padding>
+
+    <TextArea fx:id="historyArea" editable="false" VBox.vgrow="ALWAYS" />
+
+    <HBox spacing="10">
+
+        <Button defaultButton="true" onAction="#FileClicked" text="Прикрепить файл" />
+        <Button defaultButton="true" onAction="#addPhone" text="Добавить Контакт" />
+        <Button defaultButton="true" onAction="#putCmile" text="☺">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+    </HBox>
+
+    <HBox spacing="10">
+<Label text="Введите своё сообщение: " />
+    </HBox>
+
+    <HBox spacing="10">
+        <TextField fx:id="userMessage" promptText="Текст" HBox.hgrow="ALWAYS" />
+        <Button defaultButton="true" onAction="#clickCheckButton" text="Отправить ↗" />
+    </HBox>
+</VBox>
